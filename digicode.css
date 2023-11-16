@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.appareil{
+    height: 50rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.affichage{
+    margin-top: 5rem;
+    height: 10rem;
+    width: 30rem;
+    font-size: 5rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard{
+    margin-top: 5rem;
+    display: flex;
+    
+}
+
+.btn{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 3rem;
+}
