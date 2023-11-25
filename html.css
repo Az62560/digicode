@@ -1,0 +1,140 @@
+/*On applique une marge de 0 pour que le navigateur ne décale pas la page et on applique la police sur l'ensemble de la page*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Barre de navigation, on va chercher la div parent pour appliquer flex */
+.top-nav{
+    display: flex;
+    justify-content: center;   
+}
+
+.top-nav a img{
+    height: 3rem;
+    width: auto;
+    margin: 1rem;
+}
+
+.bottom-nav{
+    background-color: black;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom-nav a{
+    color: white;
+    text-decoration: none;
+}
+
+/*le hover : quand on passe la souris au dessus ça change la couleur*/
+.bottom-nav a:hover{
+    color: #573898;
+}
+
+main{
+    margin: 3.5rem 6rem 3.5rem 6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.apprendre-html{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 3rem 0;  
+}
+
+.apprendre-html img{
+    height: 2rem;
+    margin: 0 1.5rem 0 4rem; 
+}
+
+.text-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text p{
+    width: 35vw;  
+    background-color: rgb(87,56,152,0.3);
+    padding: 2rem 0 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.text-img img{
+    padding-top: 4rem;
+    width: 25vw;
+    height: auto;  
+}
+
+.example{
+    margin-top: 4rem;
+}
+
+.apprendre-plus{
+    color:#573898;
+    margin: 6rem 0 0 4rem;
+}
+
+.go-to{
+    display: flex;
+    align-items: center;
+    margin: 4rem 0 3rem 0;
+}
+
+.go-to a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.go-to a:hover{
+    color: #573898;
+}
+
+.logo-nav-footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10rem;
+}
+
+.logo-footer{
+    margin-left: 8rem;
+    padding-top: 2rem;
+}
+
+.nav-footer{
+    padding: 2rem 15rem 0 0;
+    background-color: black;
+    width: 100%;
+    height: 3rem;display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.nav-footer a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+   }
+
+.nav-footer a:hover{
+    color: #573898;
+}
+
+.rights{ 
+    background-color: black;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-bottom:1rem;
+    color: white;
+}
