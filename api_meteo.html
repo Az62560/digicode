@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="api_meteo.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="api_meteo.js" defer></script>
+    <title>api_meteo</title>
+</head>
+<body>
+    <div class="titre"><strong>Température à Coulogne</strong></div>
+    <div class="thp">
+        <p id="temp"></p><br>
+        <p id="hum"></p><br>
+        <p id="pre"></p>
+    </div>
+    <div class="tableaux">        
+        <canvas id="temperature"></canvas>
+        <canvas id="humidite"></canvas>
+        <canvas id="pression"></canvas>        
+    </div>
+</body>
+</html>
+
