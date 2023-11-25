@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="convertisseur.css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="convertisseur.js" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Convertisseur</title>
+</head>
+<body>
+    <div class="cadre">
+        <div class="conv">
+            <h1>CONVERTISSEUR</h1>
+        </div>
+        <div class="metrique">
+        <select id="unite" aria-label="Large select example">
+            <option>Selectionnez votre choix</option>
+            <option value="m">m en cm</option>
+            <option value="cm">cm en m</option>
+            <option value="L">L en ml</option>
+            <option value="ml">ml en L</option> 
+            <option value="g">g en mg</option>          
+            <option value="mg">mg en g</option>            
+        </select>
+        </div>    
+        <div class="val_conv">
+            <div class="valeur">
+                <input class="enter_valeur" type="number">
+            </div>
+            <div class="convertir">
+                <button type="submit" class="conv_button">Convertir</button>   
+            </div>            
+        </div>        
+    </div>
+    <div class="cadre_res">
+        <div class="resultat">
+            
+        </div>
+    </div>    
+</body>
+</html>
