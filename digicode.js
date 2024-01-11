@@ -14,8 +14,8 @@ for (let i = 0; i < button.length; i++) {
             affichage.innerHTML += button[i].innerHTML;
 
             color(); 
-            alea();
-
+            random();
+            generateRandom();
             }
         }
     )
@@ -39,16 +39,29 @@ function color() {
     }    
 }
 
-function alea() {
-    
-    for (let a = 0; a < htmlButton.length; a++) {
-        
-        let random = Math.floor(Math.random() * htmlButton.length);
-        tableauRandom.push(tableauRandom[random]);
-        tableauRandom.splice(random, -1);
-        button[a].innerHTML = random;
 
+let tableau;
+    let numberTab;
+    let nbRandom;
+// Fonction de mélange aléatoire
+function random() {
+    tableau = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    numberTab = [];
+    for (let i = 0; i < 9; i++) {
+        nbRandom = Math.floor(Math.random() * tableau.length);
+        numberTab.push(tableau[nbRandom]);
+        tableau.splice(nbRandom, 1);
+       
     }
+   
 }
 
-
+let boxes = document.querySelectorAll('.btn');
+let result = document.querySelector('.affichage');
+// Fonction de génération de nombre aléatoire
+function generateRandom() {
+        random()
+        for (let b = 0; b < boxes.length; b++) {
+            boxes[b].innerHTML = numberTab[b];  
+        }
+    }
